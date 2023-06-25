@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0E0E0;
+}
+
+
+
+body {
+    overflow: hidden;
+}
+
+.cotacao-do-dia{
+    background-color: #777070;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.valor-do-dia{
+    display: inline-block;
+    width: 100%;
+    color: #fcfcfc;
+    background-color: transparent;
+    animation-name: rolagem;    
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    word-spacing: 1px;
+    font-size: 14px;
+    font-weight: 200;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@keyframes rolagem {
+    0% {
+        margin-left: -100%;
+    }
+    100% {
+        margin-left: 100%;
+    }
+  }
+
+
+img {
+    display: block;
+    margin: 70px auto;
+    max-width: 20%;
+}
+
+h1 {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+input,
+select {
+    display: block;
+    width: 80%;
+    height: 45px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+select,
+input::placeholder {
+    padding-left: 10px;
+}
+
+.troca {
+    margin-top: 40px;
+}
+
+.camada01 {
+    width: 50%;
+    margin: 35px auto;
+    border-left: 4px solid #EC0101;
+    border-radius: 1px;
+}
+
+.camada02 {
+    border-left: 4px solid #0601EC;
+
+}
+
+.resultado-calculo {
+    border-left: 4px solid #E7EC01;
+    padding-left: 5px;
+    text-align: center;
+    color: #383a42;
+    font-size: 16px;
+    font-weight: 100;
+    text-shadow: 1px 1px 1px rgba(65, 64, 64, 0.527);
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    background-color: #4D4F5A;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+
+@media (max-width: 900px) {
+    img {
+        display: block;
+        margin: 40px auto;
+        max-width: 30%;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        height: 100vw;
+        overflow: hidden;
+    }
+
+    .cotacao-do-dia {
+        display: none;
+    }
+
+    img {
+        display: block;
+        margin: 50px auto;
+        max-width: 40%;
+    }
+
+    h1 {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    input,
+    select {
+        display: block;
+        width: 80%;
+        height: 45px;
+        margin: auto;
+        background-color: white;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    select,
+    input::placeholder {
+        padding-left: 10px;
+    }
+
+    .troca {
+        margin-top: 40px;
+    }
+
+    .camada01 {
+        width: 50%;
+        margin: 35px auto;
+        border-left: 4px solid #EC0101;
+        border-radius: 1px;
+    }
+
+    .camada02 {
+        border-left: 4px solid #0601EC;
+
+    }
+
+    .resultado-calculo {
+        border-left: 4px solid #E7EC01;
+        padding-left: 5px;
+        text-align: center;
+        color: #383a42;
+        font-size: 16px;
+        font-weight: 100;
+        text-shadow: 1px 1px 1px rgba(65, 64, 64, 0.527);
+    }
+
+    button {
+        display: block;
+        margin: 40px auto;
+        background-color: #4D4F5A;
+        color: white;
+        padding: 10px 25px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+}
